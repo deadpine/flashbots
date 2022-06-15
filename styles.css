@@ -1,0 +1,158 @@
+/* Fonts */
+@font-face {
+  font-family: 'CMU-Serif';
+  src: url(fonts/cmunrm.ttf);
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'CMU-Serif';
+  src: url(fonts/cmunbx.ttf);
+  font-style: normal;
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'CMU-Serif';
+  src: url(fonts/cmunci.ttf);
+  font-style: italic;
+  font-weight: normal;
+}
+
+/* Styles */
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background: white;
+  font-family: 'CMU-Serif', 'Times New Roman', Times, serif;
+  color: #1A1A1A;
+}
+h1 {
+  font-weight: normal;
+  margin-bottom: 5rem;
+  font-size: 2.5rem;
+}
+h2 {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-bottom: 1rem;
+}
+p {
+  text-indent: 1.5rem;
+}
+a {
+  color: blue;
+  text-decoration: none;
+}
+a:hover {  
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.italic {
+  font-style: italic;
+}
+.bold {
+  font-weight: bold;
+}
+
+/* Navigation */
+nav {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  background: white;
+  position: fixed;
+  top: 0;
+}
+nav div {
+  padding: 0.5rem;
+}
+nav .logo {
+  color: #1A1A1A;
+  display: flex;
+  align-items: center;
+}
+nav .logo svg {
+  margin-right: 2px;
+}
+nav .navigation {
+  display: flex;
+  align-items: center;
+}
+nav .navigation a {
+  font-size: 0.9rem;
+  padding: 0 0.25rem ;
+  text-decoration: none;
+  color: #1A1A1A;
+}
+nav .navigation a:hover {
+  text-decoration: underline;
+}
+
+/* Dark mode button */
+nav .navigation a.switcher {
+  font-style: italic;
+  border: solid 1px #1A1A1A;
+  padding: 0.1rem 0.6rem 0.1rem 0.4rem;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  margin-left: 0.25rem;
+}
+nav .navigation a.switcher svg {
+  padding: 0 3px 1px 0;
+}
+nav .navigation a.switcher:hover {
+  text-decoration: none;
+  background: #1A1A1A;
+  border: solid 1px #1A1A1A;
+  color: white;
+}
+nav .navigation a.switcher:hover svg path {
+  fill: white;
+}
+
+
+/* Content */
+header {
+  text-align: center;
+  text-indent: 0;
+  padding: 14rem 0 6rem;
+}
+header .italic {
+  padding: 0 4rem;
+}
+.content {
+  width: 100%;
+  padding: 0.5rem;
+}
+.content div {
+  padding: 7rem 0;
+}
+.links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Content */
+footer {
+  width: 100vw;
+  text-align: center;
+  padding: 4rem 0;
+  font-size: 0.8rem;
+}
+
+/* Desktop */
+@media (min-width: 640px){
+  .content {
+    padding: 0;
+    width: 39rem;
+    margin: auto;
+  }
+}
