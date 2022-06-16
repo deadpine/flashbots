@@ -77,6 +77,7 @@ nav .logo {
   display: flex;
   align-items: center;
 }
+
 nav .logo svg {
   margin-right: 2px;
 }
@@ -94,7 +95,7 @@ nav .navigation a:hover {
   text-decoration: underline;
 }
 
-/* Dark mode button */
+/* Switcher button */
 nav .navigation a.switcher {
   font-style: italic;
   border: solid 1px #1A1A1A;
@@ -117,7 +118,6 @@ nav .navigation a.switcher:hover svg path {
   fill: white;
 }
 
-
 /* Content */
 header {
   text-align: center;
@@ -129,7 +129,7 @@ header .italic {
 }
 .content {
   width: 100vw;
-  padding: 0.5rem;
+  padding: 1rem;
 }
 .content div {
   padding: 7rem 0;
@@ -140,12 +140,26 @@ header .italic {
   align-items: center;
 }
 
-/* Content */
+/* Footer */
 footer {
   width: 100vw;
   text-align: center;
   padding: 4rem 0;
   font-size: 0.8rem;
+}
+
+/* dark-mode styles */
+body.dark { background: #1A1A1A; }
+nav.dark { background: none; }
+nav.dark .logo { color: white; }
+nav.dark .navigation a.switcher { border: solid 1px white; background: #1A1A1A; color: white; }
+nav.dark .navigation a.switcher:hover { background: white; color: #1A1A1A; }
+nav.dark .navigation a.switcher:hover svg path { fill: #1A1A1A; }
+
+.grid {
+  width: 200vw;
+  height: 100vh;
+  margin-left: -50vw;
 }
 
 /* Desktop */
@@ -154,5 +168,10 @@ footer {
     padding: 0;
     width: 39rem;
     margin: auto;
+  }
+  .grid {
+    width: 100vw;
+    height: 100vh;
+    margin-left: 0;
   }
 }
