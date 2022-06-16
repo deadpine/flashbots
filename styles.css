@@ -19,6 +19,12 @@
 }
 
 /* Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   width: 100vw;
   height: 100vh;
@@ -149,7 +155,13 @@ footer {
 }
 
 /* dark-mode styles */
-body.dark { background: #1A1A1A; }
+body.dark { 
+  background: #1A1A1A; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; 
+}
 nav.dark { background: none; }
 nav.dark .logo { color: white; }
 nav.dark .navigation a.switcher { border: solid 1px white; background: #1A1A1A; color: white; }
@@ -160,6 +172,39 @@ nav.dark .navigation a.switcher:hover svg path { fill: #1A1A1A; }
   width: 200vw;
   height: 100vh;
   margin-left: -50vw;
+}
+
+/* Tunnel */
+.tunnel {
+  position: relative;
+  width: 5rem;
+  height: 5rem;
+}
+
+.frame {
+  width: 100%;
+  height: 100%;
+  border-width: 0.05rem;
+  border-style: solid;
+  border-color: rgb(0, 255, 162);
+  filter: hue-rotate(calc(24deg * var(--i)));
+  position: absolute;
+
+  /* transform-style: preserve-3d; */
+  animation-name: move;
+  animation-duration: 30s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-delay: calc(1s * var(--i) - 30s);
+}
+
+@keyframes move {
+  from {
+    transform: perspective(1000px) translateZ(0px) rotate(0deg);
+  }
+  to {
+    transform: perspective(1000px) translateZ(1000px) rotate(180deg);
+  }
 }
 
 /* Desktop */
