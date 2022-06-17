@@ -157,7 +157,7 @@ footer {
 
 /* dark-mode styles */
 body.dark { 
-  background: #141414; 
+  background: #0D0D0D; 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -165,15 +165,15 @@ body.dark {
 }
 nav.dark { background: none; }
 nav.dark .logo { color: white; }
-nav.dark .navigation a.switcher { border: solid 1px white; background: #141414; color: white; }
-nav.dark .navigation a.switcher:hover { background: white; color: #141414; }
-nav.dark .navigation a.switcher:hover svg path { fill: #141414; }
+nav.dark .navigation a.switcher { border: solid 1px white; background: #0D0D0D; color: white; }
+nav.dark .navigation a.switcher:hover { background: white; color: #0D0D0D; }
+nav.dark .navigation a.switcher:hover svg path { fill: #0D0D0D; }
 
 /* Tunnel */
 .tunnel {
   position: relative;
-  width: 2rem;
-  height: 2rem;
+  width: 2.5rem;
+  height: 2.5rem;
 }
 
 .frame {
@@ -196,17 +196,17 @@ nav.dark .navigation a.switcher:hover svg path { fill: #141414; }
   ;
   transform-style: preserve-3d;
   animation-name: move;
-  animation-duration: 15s;
+  animation-duration: 7.5s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
-  animation-delay: calc(0.5s * var(--i) - 60s);
+  animation-delay: calc(.5s * var(--i) - 60s);
 }
 @keyframes move {
   from {
     transform: perspective(1000px) translateZ(0px) rotate(0deg);
   }
   to {
-    transform: perspective(1000px) translateZ(1000px) rotate(-270deg);
+    transform: perspective(1000px) translateZ(1000px) rotate(-160deg);
   }
 }
 
