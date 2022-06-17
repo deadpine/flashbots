@@ -172,20 +172,28 @@ nav.dark .navigation a.switcher:hover svg path { fill: #141414; }
 /* Tunnel */
 .tunnel {
   position: relative;
-  width: 5rem;
-  height: 5rem;
+  width: 2rem;
+  height: 2rem;
 }
 
 .frame {
   width: 100%;
   height: 100%;
-  border-width: 0.05rem;
+  border-width: 0.02rem;
   border-style: solid;
-  border-color: rgb(0, 255, 162);
-  border-color: #6425F5;
+  border-color: #f4d8ff;
   /* filter: hue-rotate(calc(24deg * var(--i))); */
   position: absolute;
-
+  box-shadow: 
+    0px 0px 12px 1px rgba(61, 21, 164, 0.4), 
+    0px 0px 8px 1px rgba(137, 51, 244, 0.6), 
+    0px 0px 4px 0px rgba(212, 111, 237, 0.4), 
+    0px 0px 2px 0px rgba(228, 129, 237, 0.4), 
+    inset 0px 0px 12px 1px rgba(61, 21, 164, 0.5), 
+    inset 0px 0px 8px 1px rgba(137, 51, 244, 0.6), 
+    inset 0px 0px 4px 0px rgba(212, 111, 237, 0.4), 
+    inset 0px 0px 2px 0px rgba(228, 129, 237, 0.5)
+  ;
   transform-style: preserve-3d;
   animation-name: move;
   animation-duration: 15s;
@@ -193,15 +201,15 @@ nav.dark .navigation a.switcher:hover svg path { fill: #141414; }
   animation-iteration-count: infinite;
   animation-delay: calc(0.5s * var(--i) - 60s);
 }
-
 @keyframes move {
   from {
     transform: perspective(1000px) translateZ(0px) rotate(0deg);
   }
   to {
-    transform: perspective(1000px) translateZ(1200px) rotate(-270deg);
+    transform: perspective(1000px) translateZ(1000px) rotate(-270deg);
   }
 }
+
 
 /* Desktop */
 @media (min-width: 640px){
