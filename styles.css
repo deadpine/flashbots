@@ -48,6 +48,11 @@ h2 {
 }
 p {
   text-indent: 1.5rem;
+  margin-bottom: 1rem;
+}
+ol, ul {
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
 }
 a {
   color: blue;
@@ -128,8 +133,10 @@ nav .navigation a.switcher:hover svg path {
 /* Content */
 header {
   text-align: center;
-  text-indent: 0;
   padding: 14rem 0 6rem;
+}
+header p {
+  text-indent: 0;
 }
 header .italic {
   padding: 0 4rem;
