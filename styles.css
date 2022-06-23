@@ -209,6 +209,7 @@ nav.dark .navigation a.switcher:hover svg path { fill: #0D0D0D; }
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-delay: calc(1s * var(--i) - 14s);
+  z-index: calc(var(--i) * -1);
 }
 @keyframes move {
   0% { transform: perspective(1000px) translateZ(0px) rotate(120deg); opacity: 0; }
