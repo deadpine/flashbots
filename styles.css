@@ -218,75 +218,53 @@ nav.dark .navigation a.switcher:hover svg path { fill: #0D0D0D; }
 }
 
 /* Images */
-.frame:nth-child(1)::after { 
+.frame:nth-child(4n+1)::after { 
   content: "";
   position: absolute;
   top: 2rem;
   left: 1rem;
   height: 2rem;
-  width: 3rem;
-  background: url("img/01.jpeg") center/100% no-repeat;
-  transform: rotate(-50deg);
-} 
-.frame:nth-child(3)::after { 
-  content: "";
-  position: absolute;
-  bottom: 2rem;
-  right: 1rem;
-  height: 2rem;
-  width: 3rem;
-  background: url("img/02.jpeg") center/100% no-repeat;
-  transform: rotate(-190deg);
-}
-.frame:nth-child(5)::after { 
-  content: "";
-  position: absolute;
-  top: 2rem;
-  left: 1rem;
-  height: 2rem;
-  width: 3rem;
-  background: url("img/03.jpeg") center/100% no-repeat;
-  transform: rotate(150deg);
-}
-.frame:nth-child(7)::after { 
-  content: "";
-  position: absolute;
-  bottom: 2rem;
-  right: 1rem;
-  height: 2rem;
-  width: 3rem;
+  width: 2.5rem;
   background: url("img/04.jpeg") center/100% no-repeat;
-  transform: rotate(150deg);
+  transform: rotate(-220deg);
 }
-.frame:nth-child(9)::after { 
+.frame:nth-child(4n+2)::after { 
   content: "";
   position: absolute;
-  top: 2rem;
-  left: 1rem;
+  top: 1rem;
+  right: 1.5rem;
   height: 2rem;
-  width: 3rem;
-  background: url("img/05.png") center/100% no-repeat;
-  transform: rotate(50deg);
+  width: 2.5rem;
+  background: url("img/03.jpeg") center/100% no-repeat;
+  transform: rotate(60deg);
 }
-.frame:nth-child(11)::after { 
+.frame:nth-child(4n+3)::after { 
   content: "";
   position: absolute;
   bottom: 2rem;
   right: 1rem;
   height: 2rem;
-  width: 3rem;
-  background: url("img/06.webp") center/100% no-repeat;
-  transform: rotate(-230deg);
+  width: 2.5rem;
+  background: url("img/02.jpeg") center/100% no-repeat;
+  transform: rotate(200deg);
 }
-.frame:nth-child(13)::after { 
+/* Portal */
+.frame:nth-child(4n+4)::after { 
   content: "";
   position: absolute;
-  top: 2rem;
-  left: 1rem;
-  height: 2rem;
-  width: 3rem;
-  background: url("img/07.png") center/100% no-repeat;
-  transform: rotate(-230deg);
+  bottom: 1rem;
+  left: 2rem;
+  height: 1rem;
+  width: 1rem;
+  border: solid 0.02rem white;
+  border-radius: 1rem;
+  box-shadow: 
+    0px 0px 2px 0px rgba(180, 119, 255, 0.6), 
+    0px 0px 1px 1px rgba(241, 184, 255, 0.4)
+  ;
+  background: url("img/portal.jpeg");
+  background-size: cover;
+  transform: rotate(90deg);
 }
 
 /* RESPONSIVE */
