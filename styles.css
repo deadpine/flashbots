@@ -179,7 +179,7 @@ nav.dark .navigation a.switcher { border: solid 1px white; background: #0D0D0D; 
 nav.dark .navigation a.switcher:hover { background: white; color: #0D0D0D; }
 nav.dark .navigation a.switcher:hover svg path { fill: #0D0D0D; }
 
-/* Tunnel */
+/* Tunnel animation */
 .tunnel {
   position: relative;
   width: 2.5rem;
@@ -209,6 +209,11 @@ nav.dark .navigation a.switcher:hover svg path { fill: #0D0D0D; }
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-delay: calc(1s * var(--i) - 14s);
+  -webkit-animation-name: move;
+  -webkit-animation-duration: 14s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-delay: calc(1s * var(--i) - 14s);
   z-index: calc(var(--i) * -1);
 }
 @keyframes move {
@@ -216,6 +221,12 @@ nav.dark .navigation a.switcher:hover svg path { fill: #0D0D0D; }
   50% { opacity: 1; }
   100% { transform: perspective(1000px) translateZ(1000px) rotate(-70deg); }
 }
+@-webkit-keyframes move {
+  0% { transform: perspective(1000px) translateZ(0px) rotate(120deg); opacity: 0; }
+  50% { opacity: 1; }
+  100% { transform: perspective(1000px) translateZ(1000px) rotate(-70deg); }
+}
+
 
 /* Images */
 .frame a img {
