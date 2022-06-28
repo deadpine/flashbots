@@ -229,61 +229,51 @@ nav.dark .navigation a.switcher:hover svg path { fill: #0D0D0D; }
 
 
 /* Images */
-.frame a img {
-  height: 2rem;
+.frame a {
+  height: 1.5rem;
   width: auto;
   position: absolute;
-  bottom: 2rem;
-  right: 1rem;
+  cursor: pointer;
+  z-index: 100;
+  display: inline-block;
 }
-
-/* .frame:nth-child(4n+1)::after { 
-  content: "";
-  position: absolute;
+.frame:nth-child(4n+1) a { 
   bottom: 2rem;
   right: 1rem;
-  height: 2rem;
-  width: 2.5rem;
-  background: url("img/02.jpeg") center/100% no-repeat;
   transform: rotate(200deg);
 }
-.frame:nth-child(4n+2)::after { 
-  content: "";
-  position: absolute;
+.frame:nth-child(4n+2) a { 
   top: 1rem;
   right: 1.5rem;
-  height: 2rem;
-  width: 2.5rem;
-  background: url("img/03.jpeg") center/100% no-repeat;
   transform: rotate(60deg);
 }
-.frame:nth-child(4n+3)::after { 
-  content: "";
-  position: absolute;
+.frame:nth-child(4n+3) a { 
   top: 2rem;
   left: 1rem;
-  height: 2rem;
-  width: 2.5rem;
-  background: url("img/04.jpeg") center/100% no-repeat;
   transform: rotate(-220deg);
-} */
-/* Portal */
-/* .frame:nth-child(4n+4)::after { 
-  content: "";
-  position: absolute;
-  bottom: 1rem;
-  left: 2rem;
+}
+/* Portals */
+.frame:nth-child(4n+4) a { 
   height: 1rem;
   width: 1rem;
-  border: solid 0.02rem white;
+  bottom: 1rem;
+  left: 2rem;
   border-radius: 1rem;
+  transform: rotate(100deg);
+  outline: solid 0.01rem white;
   box-shadow: 
     0px 0px 2px 0px rgba(180, 119, 255, 0.6), 
     0px 0px 1px 1px rgba(241, 184, 255, 0.4)
-  ;
-  background: url("img/portal.jpeg");
-  background-size: cover;
-  transform: rotate(90deg);
+  ; 
+}
+.frame a img {
+  height: 1.5rem;
+  width: auto;
+}
+.frame:nth-child(4n+4) a img {
+  height: 1rem;
+  width: 1rem;
+  border-radius: 1rem;
 }
 
 /* RESPONSIVE */
