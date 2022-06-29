@@ -108,6 +108,13 @@ nav .menu a:hover {
 }
 
 /* Mobile menu */
+nav .menu button {
+  background: white;
+  border: none;
+  margin-left: 0.5rem;
+  padding: 0;
+  display: flex;
+}
 nav .menu ul.dropdown {
   display: none;
 }
