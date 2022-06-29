@@ -125,9 +125,8 @@ nav .menu ul.open {
   padding-bottom: 8rem;
   z-index: 10;
 }
-nav .menu ul.open li {
-  padding: 1rem 0;
-}
+nav .menu ul.open li { padding: 1rem 0; }
+nav .menu ul.open li a { font-size: 1.5rem; }
 
 /* Switcher button */
 nav .menu a.switcher {
