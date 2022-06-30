@@ -259,9 +259,9 @@ nav.dark .menu a.switcher:hover svg path { fill: #0D0D0D; }
 /* Images */
 .images {
   position: relative;
-  width: 2.5rem;
-  height: 2.5rem;
-  margin-left: -2.5rem;
+  width: 3rem;
+  height: 3rem;
+  margin-left: -3rem;
 }
 
 .img-frame {
@@ -277,22 +277,22 @@ nav.dark .menu a.switcher:hover svg path { fill: #0D0D0D; }
 
 .img-frame:nth-child(4n+1) { animation-name: zoom1; }
 @keyframes zoom1 {
-  0% { transform: perspective(1000px) scale(0) translateZ(0px) translateX(0px) translateY(0rem) rotate(120deg); }
+  0% { transform: perspective(1000px) scale(0.5) translateZ(0px) translateX(0px) translateY(0rem) rotate(120deg); }
   100% { transform: perspective(1000px) scale(1) translateZ(1100px) translateX(3rem) translateY(3rem) rotate(-70deg); }
 }
 .img-frame:nth-child(4n+2) { animation-name: zoom2; }
 @keyframes zoom2 {
-  0% { transform: perspective(1000px) scale(0) translateZ(0px) translateX(0px) translateY(0rem) rotate(120deg); }
+  0% { transform: perspective(1000px) scale(0.5) translateZ(0px) translateX(0px) translateY(0rem) rotate(120deg); }
   100% { transform: perspective(1000px) scale(1) translateZ(1100px) translateX(-3rem) translateY(3rem) rotate(-70deg); }
 }
 .img-frame:nth-child(4n+3) { animation-name: zoom3; }
 @keyframes zoom3 {
-  0% { transform: perspective(1000px) scale(0) translateZ(0px) translateX(0px) translateY(0rem) rotate(120deg); }
+  0% { transform: perspective(1000px) scale(0.5) translateZ(0px) translateX(0px) translateY(0rem) rotate(120deg); }
   100% { transform: perspective(1000px) scale(1) translateZ(1100px) translateX(-3rem) translateY(-3rem) rotate(-70deg); }
 }
 .img-frame:nth-child(4n+4) { animation-name: zoom4; }
 @keyframes zoom4 {
-  0% { transform: perspective(1000px) scale(0) translateZ(0px) translateX(0px) translateY(0rem) rotate(120deg); }
+  0% { transform: perspective(1000px) scale(0.5) translateZ(0px) translateX(0px) translateY(0rem) rotate(120deg); }
   100% { transform: perspective(1000px) scale(1) translateZ(1100px) translateX(3rem) translateY(-3rem) rotate(-70deg); }
 }
 
